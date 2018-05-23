@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<div style="background-color:yellow; border:solid; border-radius:5px;">
+		<hr size="1" color="black"/>
+		<h1 align="center" style="font-size:300%; color:violet; font-family:sans-serif;">
+			SVCE
+			<br>
+			CSE Department
+		</h1>
+		<hr size="1" color="black"/>
+	</div>
+	<div style="background-color:grey;">
+	<h2 align="center" style="color:white">
+		<br>
+		EXTRA AND CO-CRURRICULAR ACTIVITIES OF STUDENTS
+	</h2>
+		<hr size="3" color="grey"/>
+	</div>
+		<title>
+			project-homepage
+		</title>
+	<link rel="stylesheet" href="button.css">
+	<style>
+	.dropbtn {
+    background-color: #4CAF50;
+    color:white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #4CAF50;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+	background-color:#4CAF50;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color:#3e8e41;
+}
+a:link{
+	color:white;
+	background-color:transparent;
+	text-decoration:none;
+}
+
+a:hover{
+	color:white;
+	text-decoration:underline;
+}
+
+body{
+	background-image: url("img/abstract.jpg");
+}
+
+</style>
+
+	</head>
+<body>
+<br><br><br>
+<p>
+	<h2 align="center" font-family="sans-serif">
+		Select the actions you want to perform:
+	</h2>
+</p>
+<h3 align="center">
+
+
+		<!--ss = "box"><a href="enterform.html" target="_self">To Enter the activities of a student</a></div-->
+		<a href="update.php" target="_self">
+		<div class ="box"> <div class="dropdown"><button class="dropbtn">
+
+		Update student details
+
+		</button>
+	</div>
+</div></a><br><br>
+		<div class ="box"> <div class="dropdown"><button class="dropbtn">
+
+		Enter OD details
+
+		</button>
+	<div class="dropdown-content">
+		<form method="post" action="enter_od.php">
+			<select name="value">
+				<option   value="1">1 Student</option>
+				<option  value="2">2 student</option>
+				<option   value="3">3 Student</option>
+				<option   value="4">4 Student</option>
+				<option   value="5">5 Student</option>
+			</select>
+			<input type="submit" name="submit" value="submit">
+		</form>
+
+  </div>
+</div>
+</div>
+
+
+		<br><br>
+		<!-- class = "box"><a href="acitvity_form1.html" target="_self">To view the activities of a student</a></div-->
+		<a href="acitvity_form1.html" target="_self">
+		<div class ="box">
+		<div class="dropdown">
+		<button class="dropbtn">
+
+		Report on student
+
+		</button>
+
+</div>
+</div></a>
+
+
+		<br><br>
+
+		<!-- class="box"><a href="activity_form2.html" target="_self">To view the activities of the students in a class</div-->
+		<a href="activity_form2.php" target="_self">
+		<div class ="box">
+		<div class="dropdown">
+		<button class="dropbtn">
+
+		Report on class
+		</button>
+		</div>
+		</div>
+		</a>
+		<br><br>
+
+
+
+		<a href="report.php">
+		<div class ="box"> <div class="dropdown"><button class="dropbtn">
+
+			Report Generation
+
+		</button>
+
+</div>
+</div></a>
+		<br><br>
+
+
+</h3>
+<br/>
+<br/>
+<br>
+<br>
+<div style="background-color:black; color:white">
+	<h3 align="right">
+		<a href="#">About | </a>
+		<a href="#">Help</a>
+	</h3>
+</div>
+
+</body>
+</html>
